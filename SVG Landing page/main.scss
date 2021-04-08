@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 700;
+  color: white;
+  transition: font-size 1s;
+  &:hover {
+    color: rgb(212, 212, 212);
+  }
+}
+
+nav {
+  padding: 0.5vw 0;
+  margin: 2vh 4vw;
+  transition: margin 1s;
+  animation: yourAnimation 1s ease 0s normal none;
+}
+
+#fixed {
+  position: sticky;
+  top: 4vh;
+}
+
+ul {
+  margin: 0;
+  padding: 0.5vh 0 0 0;
+  list-style: none;
+  float: right;
+  li {
+    display: inline;
+    margin: 0 4vw;
+    a {
+      text-decoration: none;
+      color: #3c89d0;
+      transition: font-size 1s;
+      &:hover {
+        color: rgb(248, 248, 248);
+      }
+    }
+  }
+}
+
+#li3 {
+  margin-right: 0;
+}
+
+p {
+  color: #c4c4c4;
+}
+
+// ------------------------------------
+
+#svga {
+  width: 350px;
+  height: 360px;
+  transition: all 1s;
+}
+
+#svgaa {
+  width: 225px;
+  height: 80px;
+  animation: fill 0.5s ease forwards 4s;
+}
+
+// ------------------------------------
+
+#svgaa path {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: heading 5s ease forwards;
+}
+
+// -----------------------------------
+
+@keyframes heading {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #c4c4c4;
+    stroke-opacity: 0;
+  }
+}
+
+// -----------------------------------
+
+@keyframes updown {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 10px);
+  }
+}
+
+#head {
+  animation: updown 1s linear 0s infinite alternate none;
+}
+
+// -----------------------------------
+
+@keyframes shake {
+  0% {
+    transform: translate(0, -5px);
+  }
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+
+#illus {
+  &:hover {
+    animation: shake 0.2s linear 0s infinite alternate none;
+  }
+}
+
+// ---------------------------------
+
+@keyframes yourAnimation {
+  0% {
+    transform: translate(0, -40px);
+    opacity: 0.1;
+  }
+  20% {
+    transform: translate(0, 40px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+// -------------------------
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#background {
+  animation: rotate 5s linear 0s infinite normal none;
+  transform-origin: center;
+}
+
+// -------------------------
+
+// -------------------------
+
+@keyframes svgaa {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#svga {
+  animation: svgaa 2s ease 0s normal none;
+}
+
+// -------------------------
+
+@keyframes infoo {
+  from {
+    transform: translate(0, -200px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.info {
+  animation: infoo 2s ease normal none;
+}
+
+// --------------------------
+
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+
+  ul {
+    padding: 0.5vh 0 0 0;
+    li a {
+      font-size: 1.6rem;
+    }
+  }
+  nav {
+    margin: 4vh 4vw;
+  }
+}
+
+// --------------------------
+
+@media only screen and (min-width: 992px) {
+  #svga {
+    width: 470px;
+    height: 480px;
+  }
+}

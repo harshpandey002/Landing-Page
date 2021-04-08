@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #181818;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  font-weight: 700;
+  color: white;
+  -webkit-transition: font-size 1s;
+  transition: font-size 1s;
+}
+
+.navbar-brand:hover {
+  color: #d4d4d4;
+}
+
+nav {
+  padding: 0.5vw 0;
+  margin: 2vh 4vw;
+  -webkit-transition: margin 1s;
+  transition: margin 1s;
+  -webkit-animation: yourAnimation 1s ease 0s normal none;
+          animation: yourAnimation 1s ease 0s normal none;
+}
+
+#fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4vh;
+}
+
+ul {
+  margin: 0;
+  padding: 0.5vh 0 0 0;
+  list-style: none;
+  float: right;
+}
+
+ul li {
+  display: inline;
+  margin: 0 4vw;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #3c89d0;
+  -webkit-transition: font-size 1s;
+  transition: font-size 1s;
+}
+
+ul li a:hover {
+  color: #f8f8f8;
+}
+
+#li3 {
+  margin-right: 0;
+}
+
+p {
+  color: #c4c4c4;
+}
+
+#svga {
+  width: 350px;
+  height: 360px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#svgaa {
+  width: 225px;
+  height: 80px;
+  -webkit-animation: fill 0.5s ease forwards 4s;
+          animation: fill 0.5s ease forwards 4s;
+}
+
+#svgaa path {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  -webkit-animation: heading 5s ease forwards;
+          animation: heading 5s ease forwards;
+}
+
+@-webkit-keyframes heading {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes heading {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #c4c4c4;
+    stroke-opacity: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #c4c4c4;
+    stroke-opacity: 0;
+  }
+}
+
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+}
+
+@keyframes updown {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+}
+
+#head {
+  -webkit-animation: updown 1s linear 0s infinite alternate none;
+          animation: updown 1s linear 0s infinite alternate none;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(0, -5px);
+            transform: translate(0, -5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 5px);
+            transform: translate(0, 5px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(0, -5px);
+            transform: translate(0, -5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 5px);
+            transform: translate(0, 5px);
+  }
+}
+
+#illus:hover {
+  -webkit-animation: shake 0.2s linear 0s infinite alternate none;
+          animation: shake 0.2s linear 0s infinite alternate none;
+}
+
+@-webkit-keyframes yourAnimation {
+  0% {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+    opacity: 0.1;
+  }
+  20% {
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes yourAnimation {
+  0% {
+    -webkit-transform: translate(0, -40px);
+            transform: translate(0, -40px);
+    opacity: 0.1;
+  }
+  20% {
+    -webkit-transform: translate(0, 40px);
+            transform: translate(0, 40px);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+#background {
+  -webkit-animation: rotate 5s linear 0s infinite normal none;
+          animation: rotate 5s linear 0s infinite normal none;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes svgaa {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes svgaa {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#svga {
+  -webkit-animation: svgaa 2s ease 0s normal none;
+          animation: svgaa 2s ease 0s normal none;
+}
+
+@-webkit-keyframes infoo {
+  from {
+    -webkit-transform: translate(0, -200px);
+            transform: translate(0, -200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes infoo {
+  from {
+    -webkit-transform: translate(0, -200px);
+            transform: translate(0, -200px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.info {
+  -webkit-animation: infoo 2s ease normal none;
+          animation: infoo 2s ease normal none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+  ul {
+    padding: 0.5vh 0 0 0;
+  }
+  ul li a {
+    font-size: 1.6rem;
+  }
+  nav {
+    margin: 4vh 4vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #svga {
+    width: 470px;
+    height: 480px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
