@@ -42,8 +42,11 @@
             </div>
             <div id="results"></div>
 
+            <form action="/player" method="POST">
+                <input style="display: none;" type="text" name="javascript_data" id="data">
+                <input type="button" onclick="generate()" id="gen" value="Generate Playlist">
+            </form>
             
-            <button onclick="generate()" id="gen">Generate Playlist</button>
            
         </div>
     
