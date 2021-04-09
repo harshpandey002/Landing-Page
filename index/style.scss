@@ -36,12 +36,14 @@ body {
 }
 
 .project-card {
+  height: max-content;
   margin: 1rem 0.5rem;
   text-align: center;
   overflow: hidden;
   img {
     width: 100%;
-    height: 35vh;
+    height: 90%;
+    object-fit: cover;
   }
   p {
     font-weight: 600;
@@ -49,7 +51,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 880px) {
   .container {
     width: 100%;
   }
