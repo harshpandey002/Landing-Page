@@ -30,6 +30,25 @@ body {
   }
 }
 
+.projects {
+  display: flex;
+  padding: 0 2rem;
+}
+
+.project-card {
+  margin: 1rem 0.5rem;
+  text-align: center;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 35vh;
+  }
+  p {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 780px) {
   .container {
     width: 100%;
@@ -37,5 +56,20 @@ body {
 
   .nav h1 {
     font-size: 2.5rem;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project-card {
+    margin: 1rem 0 0 0;
+
+    img {
+      height: auto;
+    }
+    p {
+      font-size: 1.2rem;
+    }
   }
 }

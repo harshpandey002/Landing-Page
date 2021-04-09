@@ -42,12 +42,50 @@ body {
   font-size: 3rem;
 }
 
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2rem;
+}
+
+.project-card {
+  margin: 1rem 0.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 35vh;
+}
+
+.project-card p {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
 @media only screen and (max-width: 780px) {
   .container {
     width: 100%;
   }
   .nav h1 {
     font-size: 2.5rem;
+  }
+  .projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-card {
+    margin: 1rem 0 0 0;
+  }
+  .project-card img {
+    height: auto;
+  }
+  .project-card p {
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
