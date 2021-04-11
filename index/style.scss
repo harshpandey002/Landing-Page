@@ -51,9 +51,10 @@ main {
     height: 90%;
     object-fit: cover;
     transform: scale(1);
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
     &:hover {
       transform: scale(0.98);
+      border-radius: 20px;
     }
   }
   p {

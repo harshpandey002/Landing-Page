@@ -71,15 +71,14 @@ main {
      object-fit: cover;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .project-card img:hover {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+  border-radius: 20px;
 }
 
 .project-card p {
