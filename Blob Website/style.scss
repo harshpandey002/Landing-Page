@@ -13,151 +13,306 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to top,
-    hsla(358, 89%, 72%, 0.466),
-    hsla(42, 94%, 75%, 0.452),
-    hsla(144, 100%, 89%, 0.473)
-  );
 }
-// pink red yellow purple blue green
-
-@keyframes redAnim {
-  0% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translate(800px, 300px);
-  }
-  50% {
-    transform: translate(0, 600px) scale(1.3);
-  }
-  75% {
-    transform: translate(-800px, 300px);
-  }
-  100% {
-    transform: translate(0, 0) rotate(360deg) scale(1);
-  }
-}
-
-@keyframes yellowAnim {
-  0% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translate(0, -600px);
-  }
-  50% {
-    transform: translate(1000px, -600px) scale(1.3);
-  }
-  75% {
-    transform: translate(1000px, 0);
-  }
-  100% {
-    transform: translate(0, 0) rotate(360deg) scale(1);
-  }
-}
-@keyframes greenAnim {
-  0% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translate(0, 600px);
-  }
-  50% {
-    transform: translate(-1000px, 600px) scale(1.3);
-  }
-  75% {
-    transform: translate(-1000px, 0);
-  }
-  100% {
-    transform: translate(0, 0) rotate(360deg) scale(1);
-  }
-}
-@keyframes blueAnim {
-  0% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translate(-800px, -300px);
-  }
-  50% {
-    transform: translate(0, -600px) scale(1.3);
-  }
-  75% {
-    transform: translate(800px, -300px);
-  }
-  100% {
-    transform: translate(0, 0) rotate(360deg) scale(1);
-  }
-}
-@keyframes purpleAnim {
-  0% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-  }
-  25% {
-    transform: translate(-1000px, 0);
-  }
-  50% {
-    transform: translate(-1000px, -600px) scale(1.3);
-  }
-  75% {
-    transform: translate(0, -600px);
-  }
-  100% {
-    transform: translate(0, 0) rotate(360deg) scale(1);
-  }
-}
-@keyframes pinkAnim {
-  0% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
+@media only screen and (min-width: 880px) {
+  body {
+    background: linear-gradient(
+      to top,
+      hsla(358, 89%, 72%, 0.466),
+      hsla(42, 94%, 75%, 0.452),
+      hsla(144, 100%, 89%, 0.473)
+    );
   }
 
-  50% {
-    transform: translate(1000px, 600px) scale(1.3);
+  @keyframes redAnim {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translate(800px, 300px);
+    }
+    50% {
+      transform: translate(0, 600px) scale(1.3);
+    }
+    75% {
+      transform: translate(-800px, 300px);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg) scale(1);
+    }
   }
 
-  100% {
-    transform: translate(0, 0) rotate(360deg) scale(1);
+  @keyframes yellowAnim {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translate(0, -600px);
+    }
+    50% {
+      transform: translate(1000px, -600px) scale(1.3);
+    }
+    75% {
+      transform: translate(1000px, 0);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+  }
+  @keyframes greenAnim {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translate(0, 600px);
+    }
+    50% {
+      transform: translate(-1000px, 600px) scale(1.3);
+    }
+    75% {
+      transform: translate(-1000px, 0);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+  }
+  @keyframes blueAnim {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translate(-800px, -300px);
+    }
+    50% {
+      transform: translate(0, -600px) scale(1.3);
+    }
+    75% {
+      transform: translate(800px, -300px);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+  }
+  @keyframes purpleAnim {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translate(-1000px, 0);
+    }
+    50% {
+      transform: translate(-1000px, -600px) scale(1.3);
+    }
+    75% {
+      transform: translate(0, -600px);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+  }
+  @keyframes pinkAnim {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+
+    50% {
+      transform: translate(1000px, 600px) scale(1.3);
+    }
+
+    100% {
+      transform: translate(0, 0) rotate(360deg) scale(1);
+    }
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+  }
+
+  #pink {
+    top: -40%;
+    left: -25%;
+    animation: pinkAnim 20s linear infinite normal none;
+  }
+
+  #red {
+    top: -70%;
+    opacity: 0.8;
+    animation: redAnim 20s linear infinite normal none;
+  }
+
+  #yellow {
+    top: 10%;
+    right: 35%;
+    animation: yellowAnim 20s linear infinite normal none;
+  }
+
+  #purple {
+    top: 10%;
+    left: 45%;
+    animation: purpleAnim 20s linear infinite normal none;
+  }
+
+  #green {
+    top: -50%;
+    left: 40%;
+    animation: greenAnim 20s linear infinite normal none;
+  }
+
+  #blue {
+    top: 10%;
+    animation: blueAnim 20s linear infinite normal none;
   }
 }
 
-img {
-  position: absolute;
-  width: 100%;
-}
+@media only screen and (max-width: 880px) {
+  .blobs {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
 
-#pink {
-  top: -40%;
-  left: -25%;
-  animation: pinkAnim 20s linear infinite normal none;
-}
+  img {
+    position: absolute;
+    width: 100%;
+  }
 
-#red {
-  top: -70%;
-  opacity: 0.8;
-  animation: redAnim 20s linear infinite normal none;
-}
+  @keyframes pinkAnim {
+    0% {
+      transform: translate(0, 0) scale(2);
+    }
+    25% {
+      transform: translate(100px, 0) scale(2);
+    }
+    50% {
+      transform: translate(100px, 500px) scale(2);
+    }
+    75% {
+      transform: translate(0, 500px) scale(2);
+    }
+    100% {
+      transform: translate(0, 0) scale(2);
+    }
+  }
 
-#yellow {
-  top: 10%;
-  right: 35%;
-  animation: yellowAnim 20s linear infinite normal none;
-}
+  @keyframes redAnim {
+    0% {
+      transform: translate(0, 0) scale(2);
+    }
+    25% {
+      transform: translate(0, 500px) scale(2);
+    }
+    50% {
+      transform: translate(-100px, 500px) scale(2);
+    }
+    75% {
+      transform: translate(-100px, 0) scale(2);
+    }
+    100% {
+      transform: translate(0, 0) scale(2);
+    }
+  }
 
-#purple {
-  top: 10%;
-  left: 45%;
-  animation: purpleAnim 20s linear infinite normal none;
-}
+  @keyframes yellowAnim {
+    0% {
+      transform: translate(0, 0) scale(2);
+    }
+    25% {
+      transform: translate(50, -250px) scale(2);
+    }
+    50% {
+      transform: translate(50px, 500px) scale(2);
+    }
+    100% {
+      transform: translate(0, 0) scale(2);
+    }
+  }
 
-#green {
-  top: -50%;
-  left: 40%;
-  animation: greenAnim 20s linear infinite normal none;
-}
+  @keyframes purpleAnim {
+    0% {
+      transform: translate(0, 0) scale(2);
+    }
+    25% {
+      transform: translate(-50, -250px) scale(2);
+    }
+    50% {
+      transform: translate(-50px, 500px) scale(2);
+    }
+    100% {
+      transform: translate(0, 0) scale(2);
+    }
+  }
 
-#blue {
-  top: 10%;
-  animation: blueAnim 20s linear infinite normal none;
+  @keyframes greenAnim {
+    0% {
+      transform: translate(0, 0) scale(2);
+    }
+    25% {
+      transform: translate(0, -500px) scale(2);
+    }
+    50% {
+      transform: translate(100px, -500px) scale(2);
+    }
+    75% {
+      transform: translate(100px, 0) scale(2);
+    }
+    100% {
+      transform: translate(0, 0) scale(2);
+    }
+  }
+
+  @keyframes blueAnim {
+    0% {
+      transform: translate(0, 0) scale(2);
+    }
+    25% {
+      transform: translate(-100px, 0) scale(2);
+    }
+    50% {
+      transform: translate(-100px, -500px) scale(2);
+    }
+    75% {
+      transform: translate(0, -500px) scale(2);
+    }
+    100% {
+      transform: translate(0, 0) scale(2);
+    }
+  }
+
+  #pink {
+    top: -5%;
+    right: 20%;
+    animation: pinkAnim 10s linear infinite normal none;
+  }
+
+  #red {
+    top: -5%;
+    left: 30%;
+    animation: redAnim 5s linear infinite normal none;
+  }
+
+  #yellow {
+    top: 25%;
+    right: 20%;
+    animation: yellowAnim 10s linear infinite normal none;
+  }
+
+  #purple {
+    top: 30%;
+    left: 20%;
+    animation: purpleAnim 5s linear infinite normal none;
+  }
+
+  #green {
+    top: 60%;
+    right: 30%;
+    animation: greenAnim 10s linear infinite normal none;
+  }
+
+  #blue {
+    top: 60%;
+    left: 30%;
+    animation: blueAnim 5s linear infinite normal none;
+  }
 }
