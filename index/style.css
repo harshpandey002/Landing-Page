@@ -46,6 +46,16 @@ main {
   margin: 2rem 0;
 }
 
+main h1 {
+  color: #222222;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid #414141;
+  margin: 3rem auto 2rem auto;
+}
+
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,6 +94,7 @@ main {
 .project-card p {
   font-weight: 600;
   font-size: 1.5rem;
+  color: rgba(34, 34, 34, 0.664);
 }
 
 @media only screen and (max-width: 880px) {
@@ -95,6 +106,10 @@ main {
   }
   main {
     margin: 0;
+  }
+  main h1 {
+    font-size: 1.6rem;
+    margin: 3rem auto 1rem auto;
   }
   .projects {
     -webkit-box-orient: vertical;
